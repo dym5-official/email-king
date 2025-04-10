@@ -1,0 +1,13 @@
+.wrap {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+}
+
+.know {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+}
+
+.wrap > div:first-child {
+    border-radius: 8px 8px 0 0;
+}

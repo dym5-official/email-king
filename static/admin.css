@@ -1,0 +1,33 @@
+ul#adminmenu a.wp-has-current-submenu:after,
+ul#adminmenu>li.current>a.current:after {
+    border-right-color: transparent;
+}
+
+#wpcontent {
+    padding-left: 0;
+}
+
+#wpbody-content {
+    padding-bottom: 0;
+}
+
+#wpbody-content .notice {
+    display: none!important;
+}
+
+#wpfooter {
+    display: none;
+}
+
+#email-king-app-frame {
+    display: block;
+    border: none;
+    width: 100%;
+    height: calc(100vh - 320px);
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    border-top: 1px solid #444;
+    border-left: 1px solid #444;
+}

@@ -1,0 +1,21 @@
+{
+    "restartable": "rs",
+    "ignore": [
+        ".git",
+        "node_modules/**/node_modules"
+    ],
+    "verbose": true,
+    "watch": [
+        "dev",
+        "mods/dash/front",
+        "mods/logs/front",
+        "mods/send/front",
+        "mods/smtp/front",
+        "mods/conf/front"
+    ],
+    "env": {
+        "NODE_ENV": "development"
+    },
+    "ext": "js,jsx,css,json",
+    "exec": "node dev/build.js"
+}

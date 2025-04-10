@@ -1,0 +1,20 @@
+.confw {
+    width: 680px;
+    margin: 0 auto;
+}
+
+.bb {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.listw  + div {
+    margin-top: 20px;
+}
+
+.listw > div {
+    padding: 8px 12px;
+}
+
+.listw > div:not(:first-child) {
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+}

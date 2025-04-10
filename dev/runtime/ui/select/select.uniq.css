@@ -1,0 +1,7 @@
+.select option {
+    color: #1c1c1c;
+}
+
+.select.borderless {
+    border: none;
+}

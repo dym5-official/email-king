@@ -1,0 +1,56 @@
+.switch span {
+    display: inline-block;
+    height: 30px;
+    width: 50px;
+    border-radius: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    position: relative;
+}
+
+.switch span::before {
+    content: '';
+    display: block;
+    height: 18px;
+    width: 18px;
+    background-color: rgba(255, 255, 255, 0.15);
+    top: 4px;
+    left: 4px;
+    position: absolute;
+    border-radius: 100%;
+    transition: 0.3s;
+    box-sizing: border-box;
+}
+
+.switch input {
+    display: none;
+}
+
+.switch input:checked+span {
+    border-color: #a55f3d;
+}
+
+.switch input:checked+span::before {
+    left: 24px;
+    transition: 0.3s;
+    background-color: #a55f3d;
+}
+
+.switch.loading span::before {
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    background-color: transparent!important;
+    border-right-color: transparent!important;
+    animation: switchspin 0.5s linear infinite;
+}
+
+.switch.loading input:checked + span::before {
+    border: 2px solid #a55f3d;
+}
+
+@keyframes switchspin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,13 @@
+.iio {
+    border-bottom: 1px solid #eee;
+}
+
+.color {
+    height: 14px;
+    width: 14px;
+    border-radius: 4px;
+}
+
+.chartw {
+    border-radius: 4px 4px 0 0;
+}

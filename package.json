@@ -1,0 +1,29 @@
+{
+  "name": "email-king",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "wpcs:check": "vendor/bin/phpcs -s > cs-check.report.log",
+    "wpcs:fix": "vendor/bin/phpcbf > cs-fix.report.log",
+    "install:dep": "yarn && composer install",
+    "build": "./commands/build"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.5.2",
+    "axios": "^1.7.2",
+    "date-fns": "^3.6.0",
+    "react": "^18.2.0",
+    "react-day-picker": "^8.10.1",
+    "react-dom": "18.2.0",
+    "react-simple-wysiwyg": "^3.0.2",
+    "vanillatoasts": "^1.6.0",
+    "wirec": "^1.2.1"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.3",
+    "nodemon": "^3.1.0",
+    "uniqcss": "^1.0.0"
+  }
+}

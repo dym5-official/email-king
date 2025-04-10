@@ -1,0 +1,18 @@
+.ind {
+    height: 14px;
+    width: 14px;
+    border-radius: 100%;
+}
+
+.sod {
+    color: #f14848aa;
+    border: 1px solid #f1484844;
+    background-color: #f1484811;
+}
+
+.custom {
+    border: 1px solid #a55f3d66;
+    border-top: none;
+    background-color: #a55f3d11;
+    border-radius: 0 0 4px 4px;
+}

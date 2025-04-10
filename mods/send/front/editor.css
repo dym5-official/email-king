@@ -1,0 +1,10 @@
+.rsw-editor {
+    border-radius: 0px !important;
+    height: 100%;
+    border: none !important;
+}
+
+._d5emtexteditor .rsw-ce {
+    overflow-y: auto !important;
+    padding: 1.5rem !important;
+}

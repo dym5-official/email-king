@@ -1,0 +1,59 @@
+#!/usr/bin/env bash
+
+# yarn wpcs:fix
+yarn wpcs:fix >/dev/null 2>&1
+
+ROOTDIR=$(pwd)
+NAME="email-king"
+VERSION=$(php -r 'preg_match("/\*\s?Version\:\s?(.*?)\n/i", file_get_contents("./email-king.php"), $m);echo is_array($m) && isset($m[1]) ? $m[1] : "";')
+FOLDER="$NAME$NAMESUFFIX"
+ZIPNAME="email-king$NAMESUFFIX-$VERSION.zip";
+TMPDIRNAME="glkHjfgjJUghufgKIolf"
+
+if [ -d "$TMPDIRNAME" ]; then
+    rm -rf $TMPDIRNAME
+fi
+
+if [ -f "$ZIPNAME" ]; then
+    rm $ZIPNAME
+fi
+
+zip -q -r "$ZIPNAME" . -x \
+    "dev/*" \
+    "node_modules/*" \
+    ".gitignore" \
+    "release" \
+    "yarn.lock" \
+    ".git/*" \
+    ".notes/*" \
+    "mods/conf/front/*" \
+    "mods/dash/front/*" \
+    "mods/logs/front/*" \
+    "mods/send/front/*" \
+    "mods/smtp/front/*" \
+    "test/*" \
+    "README.md" \
+    "*.zip" \
+    "*.log" \
+    "vendor/*" \
+    "commands/*" \
+    "phpcs.xml" \
+    "package.json" \
+    "composer.lock" \
+    "composer.json" \
+    "nodemon.json" \
+    "licenses/*" \
+    "replace-scripts.js"
+
+mkdir $TMPDIRNAME
+mkdir "$TMPDIRNAME/$FOLDER"
+mv $ZIPNAME "$TMPDIRNAME/$FOLDER/"
+cd "$TMPDIRNAME/$FOLDER/"
+unzip -q $ZIPNAME
+rm $ZIPNAME
+cd ../
+echo "<?php // haha!" > $FOLDER/assets/index.php
+zip -q -r $ZIPNAME $FOLDER
+mv $ZIPNAME ../
+cd ../
+rm -rf $TMPDIRNAME

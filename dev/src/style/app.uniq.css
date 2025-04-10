@@ -1,0 +1,47 @@
+.appw {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.tabs {
+    width: 56px;
+    border-right: 1px solid #444;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.06);
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.tabs > a {
+    display: flex;
+    text-align: center;
+    height: 62px;
+    font-size: 16px;
+    line-height: 1;
+    border-bottom: 1px solid #444;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.body {
+    position: relative;
+    flex-grow: 1;
+}
+
+.tabicon {
+    height: 28px;
+    width: auto;
+    filter: grayscale(100%);
+}
+
+.tabs > a.active {
+    /* background-color: #a55f3d33; */
+    background-color: #42619133;
+}
+
+.tabs > a.active .tabicon {
+    filter: grayscale(0);
+}

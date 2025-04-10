@@ -1,0 +1,25 @@
+.cb {
+    cursor: pointer;
+}
+
+.cb input {
+    display: none;
+}
+
+.cb input + span {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+}
+
+.cb input:checked + span {
+    background-color: #a55f3d;
+    background-image: url(./dot.svg);
+    background-size: 6px 6px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cb.round input + span {
+    border-radius: 100%;
+}

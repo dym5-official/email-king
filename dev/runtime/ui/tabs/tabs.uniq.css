@@ -1,0 +1,36 @@
+.tabs > a {
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: bold;
+    display: block;
+    padding: 8px 12px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+}
+
+.tabs:not(.equal) > a {
+    float: left;
+}
+
+.tabs.equal {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.tabs.equal > a {
+    flex-grow: 1;
+}
+
+.tabs > a:hover {
+    opacity: 0.85;
+}
+
+.tabs > a:active {
+    opacity: 0.75;
+}
+
+.tabs > a.active {
+    color: #a55f3d;
+    border-bottom: 1px solid #a55f3d;
+}

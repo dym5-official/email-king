@@ -1,0 +1,42 @@
+.input {
+    display: block;
+    width: 100%;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    line-height: 20px;
+    padding: 4px 8px;
+    color: rgba(255, 255, 255, 0.5);
+    transition: border-color 0.2s;
+}
+
+.input.height {
+    height: 30px;
+}
+
+.input:not(.borderless):focus {
+    border-color: #a55f3d;
+}
+
+.input.size_small {
+    font-size: 12px;
+    line-height: 16px;
+    height: 24px;
+}
+
+.input.size_big {
+    font-size: 18px;
+    line-height: 28px;
+    height: 46px;
+    padding: 8px 12px;
+}
+
+.input:not(.borderless) {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+}
+
+.input.borderless {
+    border: none;
+    outline: none;
+}

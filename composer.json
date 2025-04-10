@@ -1,0 +1,14 @@
+{
+    "name": "dym5/wp-plugin",
+    "description": "Dev only",
+    "type": "project",
+    "license": "MIT",
+    "require-dev": {
+        "wp-coding-standards/wpcs": "^3.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}

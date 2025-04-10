@@ -1,0 +1,18 @@
+.status.center {
+    text-align: center;
+}
+
+.status .head {
+    font-size: 20px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.status .message {
+    display: inherit;
+}
+
+.status.code_ERR_NETWORK .head,
+.status.code_403 .head {
+    color: #df4c4c;
+}

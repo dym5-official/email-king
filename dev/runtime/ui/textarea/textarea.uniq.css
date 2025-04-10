@@ -1,0 +1,10 @@
+.textarea {
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    padding: 8px 8px;
+}
+
+.textarea.noresize {
+    resize: none;
+}

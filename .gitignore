@@ -1,0 +1,8 @@
+assets/
+dev/node_modules/
+dev/yarn.lock
+yarn-error.log
+*.zip
+vendor/
+*.log
+node_modules/

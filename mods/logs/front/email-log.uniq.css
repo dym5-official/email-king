@@ -1,0 +1,213 @@
+.logwrp {
+    /* padding: 10px 20px 20px 20px; */
+    /* padding: 24px; */
+    height: 100%;
+    background: radial-gradient(#a5603d4d, #42619112);
+}
+
+.loginr {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    /* gap: 20px; */
+    overflow: hidden;
+    position: relative;
+}
+
+.loginr .tools {
+    padding: 12px 18px 12px 23px;
+    height: 62px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    /* background-color: #1c1c1caa; */
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.loginr .items {
+    /* border: 1px solid rgba(255, 255, 255, 0.1); */
+    border-top: none;
+    flex-grow: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* background: radial-gradient(#a5603d07, #42619107); */
+    background-color: #1c1c1c;
+    position: relative;
+}
+
+.showwrp,
+.showinr {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+.showwrp {
+    width: 100%;
+    z-index: 8;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.showinr {
+    z-index: 10;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #a55f3d;
+    background-color: #1c1c1c;
+}
+
+.stsblt {
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+}
+
+.srhclear {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    font-size: 12px;
+}
+
+/* Table */
+.table {
+    width: 100%;
+}
+
+.table tbody tr td {
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+    padding: 8px 0;
+}
+
+.table tbody tr:nth-child(even) td {
+    background-color: #42619103;
+}
+
+.table tbody tr:hover td {
+    background-color: #42619112;
+}
+
+.table .estatus {
+    width: 24px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table .eresend,
+.table .echeck {
+    position: relative;
+    width: 28px;
+}
+
+.table .echeck > label {
+    position: absolute;
+    top: 10px;
+}
+
+.table .estatus1,
+.table .etook,
+.table .eto,
+.table .etime,
+.table .esubject {
+    border-right: 1px dashed rgba(255, 255, 255, 0.1);
+}
+
+.table .etime {
+    font-size: 12px;
+    width: 168px;
+}
+
+.table .esubject {
+    padding-right: 10px;
+}
+
+.table .estatus1,
+.table .etook,
+.table .eto,
+.table .eresend,
+.table .etime {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.table .eto {
+    width: 400px;
+}
+
+.table .etook,
+.table .estatus1 {
+    width: 76px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.timeline {
+    gap: 28px;
+    position: relative;
+}
+
+.timeline .red {
+    color: #933434;
+}
+
+.timeline .green {
+    color: green;
+}
+
+.timeline .tltime {
+    font-size: 10px;
+    margin-top: 4px;
+    line-height: 1;
+}
+
+.timeline .tlname {
+    font-size: 11px;
+    margin-top: 6px;
+    line-height: 1;
+}
+
+.timeline::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    left: 0;
+    z-index: 6;
+    border-bottom: 1px solid #42619188;
+}
+
+.timeline > div {
+    position: relative;
+    z-index: 14;
+    background-color: #30241d;
+    padding: 0 8px;
+}
+
+.timelinew {
+    border-bottom: 1px solid #a55f3d;
+    background: #30241d;
+}
+
+.srbtn {
+    font-size: 20px;
+    line-height: 1;
+}

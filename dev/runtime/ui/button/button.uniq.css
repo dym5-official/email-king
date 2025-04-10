@@ -1,0 +1,74 @@
+.btn {
+    height: 30px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 4px 12px;
+    border-radius: 4px;
+    color: rgba(255, 255, 255, 0.75);
+    background-color: #426191;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn:active {
+    opacity: 0.8;
+}
+
+.btn.danger {
+    background-color: #933434;
+}
+
+.btn.sec {
+    background-color: #a55f3d;
+}
+
+.btn.mr {
+    margin-right: 10px;
+}
+
+.btn.ml {
+    margin-left: 10px;
+}
+
+.btn.small {
+    font-size: 12px;
+    line-height: 16px;
+    height: 24px;
+}
+
+.btn.big {
+    font-size: 16px;
+    line-height: 24px;
+    height: 46px;
+    padding: 8px 18px;
+}
+
+.btn.dis {
+    opacity: 0.25;
+    cursor: default;
+}
+
+.btn.icononly {
+    height: 30px;
+    width: 30px;
+    font-size: 14px;
+    line-height: 1;
+    padding: 0;
+    border-radius: 100%;
+}
+
+.btn.noborder {
+    border: none;
+    background: transparent;
+}
+
+.btn.link {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
