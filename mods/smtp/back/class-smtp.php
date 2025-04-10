@@ -470,7 +470,6 @@ class SMTP {
 			$data['senderemail'] = $pre['senderemail'] ?? '';
 		}
 
-
 		if ( '0' === $data['onlysites'] ) {
 			$data['sites'] = $pre['sites'] ?? array();
 		}

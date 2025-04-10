@@ -31,7 +31,6 @@ class Main {
 		 * Init: App
 		 */
 		App::init();
-
 	}
 
 	public function __get( $prop ) {
